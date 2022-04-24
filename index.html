@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uts Pemograman Web</title> 
+    </head>
+    <body>
+        <nav>
+            <div class="wrapper">
+                <div class="logo"><a href=''><h5>Gaji Karyawan Di Perusahaan Rokok.</h5></a></div>
+            </div>
+        </nav>
+        <br>
+        <h2>Perhitungan Gaji Karyawan:</h2>
+        <br>
+        <form action="hitung.php" method="post"> 
+            <table>
+                    <tr>
+                        <td>Masukkan Nama Pegawai</td>
+                        <td><input type="text" name="nama"/></td>
+                    </tr>
+                    <tr>
+                        <td>Masukkan Gaji Pokok</td>
+                        <td><input type="text" name="gaji_pokok"/></td>
+                    </tr>
+                    <tr> 
+                        <td>
+                        <p> Nama Jabatan         
+                            <select name='nama_jabatan'>
+                              <option value='direktur'>Direktur</option>
+                              <option value='manager'>Manager</option>
+                              <option value='staf'>Staf</option>
+                            </select>
+                        </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Masukkan Potongan</td>
+                        <td><input type="text" name="potongan"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" value="Kirim"/>
+                            <input type="reset" value="Batal"/>
+                        </td>
+                    </tr>
+            </table>
+       </form>
+    </br>
+    </br>
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                <div class="footer-section">
+                    <h3>Almantalung.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, culpa!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Jln. Gatot Subroto 4 Blok 7 NO.8</p>
+                    <p>Kode Pos: 80231</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social Media</h3>
+                    <p><b>YouTube: </b> <a href="https://www.youtube.com/channel/UCo1Tfrk0agNGG5SEzNgtA-g"> Alman Talung </a> </p>
+                    <p><b>Facebook:</b><a href="https://web.facebook.com/alman.talung"> Alman Talung</a></p>
+                    <p><b>Instagram:</b><a href="https://www.instagram.com/allmantalung/"> @allmantalung</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2021.<b>almantalung.</b> All Rights Reserved.
+        </div>
+    </div>
+    </body>
+</html>
+
+<style>
+    * {
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
+        
+       
+    }
+    
+    body {
+        background-color: rgb(58, 58, 58);
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Open Sans',sans-serif;
+    }
+    
+    .wrapper {
+        width: 1100px;
+        margin: auto;
+        position: relative;
+    }
+    
+    .logo a {
+        font-size: 50px;
+        font-weight: 800;
+        float: left;
+        font-family: courier;
+        color: #051e3b;
+    }
+    
+    .menu {
+        float: right;
+    }
+    
+    nav {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        line-height: 80px;
+        position: sticky;
+        position: -webkit-sticky; 
+        top: 0;
+        background: #ce800a;
+        z-index: 1;
+        border-bottom:1px solid #364f6b;
+    }
+    
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.kolom {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.kolom .deskripsi {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'comic sans ms';
+    color: #364f6b;
+}
+#contact {
+    background: #504f4f;
+    padding:50px 0px 50px 0px;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer-section {
+    width: 20%;
+    margin: 0 auto;
+}
+
+h3 {
+    font-family: 'comic sans ms';
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #051e3b;
+    width: 100%;
+    line-height: 50px;
+}
+
+#copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    margin-top: 50px;
+}
+
+</style>
