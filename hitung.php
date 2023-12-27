@@ -9,7 +9,7 @@ $potongan = $_POST['potongan'];
 
 
 
-$gajitotal=($tujangan)+($gaji_pokok)-($potongan);
+$gajitotal=($tunjangan)+($gaji_pokok)-($potongan);
  
 ("<b>Nama:</b> ");
 echo ($nama);
